@@ -1,6 +1,6 @@
 [project]
 name = "ifcdate"
-version = "0.1.1"
+version = "0.1.2"
 description = "Convert dates between Unix, Gregorian, and International Fixed Calendar"
 readme = "README.md"
 authors = [
