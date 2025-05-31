@@ -1,0 +1,17 @@
+[project]
+name = "unixtoifctime"
+version = "1.0.0"
+description = "Converts between Unix time, Gregorian calendar, and International Fixed Calendar (IFC)."
+authors = [
+    { name="Fabian Köll", email="koell.dev@google.com" }
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.7"
+
+[project.scripts]
+unixtoifctime = "unixToIfcTime:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
