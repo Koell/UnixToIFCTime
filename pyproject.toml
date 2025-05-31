@@ -1,16 +1,16 @@
 [project]
-name = "unixtoifctime"
-version = "1.0.0"
-description = "Converts between Unix time, Gregorian calendar, and International Fixed Calendar (IFC)."
+name = "ifcdate"
+version = "0.1.0"
+description = "Convert dates between Unix, Gregorian, and International Fixed Calendar"
 authors = [
-    { name="Fabian Köll", email="koell.dev@google.com" }
+    { name = "Fabian Köll", email = "koell.dev@google.com" }
 ]
-license = { file = "LICENSE" }
-readme = "README.md"
-requires-python = ">=3.7"
+license = "MIT"
+requires-python = ">=3.8"
+dependencies = []
 
 [project.scripts]
-unixtoifctime = "unixToIfcTime:main"
+ifcdate = "ifcdate.cli:main"
 
 [build-system]
 requires = ["setuptools>=61.0"]
