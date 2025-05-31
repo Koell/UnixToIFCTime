@@ -1,7 +1,8 @@
 [project]
 name = "ifcdate"
-version = "0.1.0"
+version = "0.1.1"
 description = "Convert dates between Unix, Gregorian, and International Fixed Calendar"
+readme = "README.md"
 authors = [
     { name = "Fabian Köll", email = "koell.dev@google.com" }
 ]
