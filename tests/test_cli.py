@@ -33,3 +33,9 @@ def test_cli_with_ifc_date():
     result = run_cli("-i", "2025-01-01")
     assert result.returncode == 0
     assert "2025-01-01" in result.stdout
+
+def test_cli_with_invalid_ifc_date():
+    result = run_cli("-i", "2025-13-31")
+    assert result.returncode == 0
+    assert "Error:" in result.stdout
+    assert "Invalid day 31 in month 13" in result.stdout
