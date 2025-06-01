@@ -26,9 +26,10 @@ def main():
 
     try:
         if args.date:
-            unix_time = date_to_unix(args.date)
+            unix_time, _ = date_to_unix(args.date)
+            print(f"DEBUG: args.unix = {args.unix}")
             print_fancy(unix_time) if args.verbose else print(unix_to_ifc(unix_time))
-        elif args.unix:
+        elif args.unix is not None:
             print_fancy(args.unix) if args.verbose else print(unix_to_ifc(args.unix))
         elif args.ifc:
             unix_time = ifc_to_unix(args.ifc)
@@ -38,3 +39,6 @@ def main():
             print_fancy(unix_time) if args.verbose else print(unix_to_ifc(unix_time))
     except Exception as e:
         print(f"Error: {e}")
+
+if __name__ == "__main__":
+    main()
